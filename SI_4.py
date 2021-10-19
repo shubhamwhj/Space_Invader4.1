@@ -12,6 +12,10 @@ playerSpeed=20
 enemy=pygame.Rect(70,50,40,40)
 enemyspeed= -2;
 
+#Create a list of enemies named "enemies"
+
+#Use for loop to append enemy rectangles in the enemies list.
+
 bullet=pygame.Rect(200,400,5,10)
 bulletspeed=5 
 bulletState="ready"
@@ -39,7 +43,7 @@ while True:
        if bullet.y<0:
            bulletState="ready"
 
-                   
+    #Code to move one enemy. Move this code inside a loop that runs for all enemies in the enemies list.               
     enemy.x= enemy.x + enemyspeed
     
     if enemy.x == 0 or enemy.x==380:
